@@ -1,4 +1,4 @@
-# 03 Password Generator 
+# Password Generator 
 
 ## This Github repository contains a secure password generator application written in HTML, CSS and JavaScript. 
 
@@ -12,36 +12,38 @@ I aim to continue to iterate on the code in the future, potentially looking to b
 
 As this was my first real use of JavaScript within a web application I found the project challenging, but utilised a number of tutorials on the use of ASCII code pages to supply the usable characters I could utilise to generate  a compliant password. I also utilised my developer peers to sanity check and discuss my approach, utilising their knowledge and support to produce an acceptable end result. Finally, the use of dialog box prompting to provide the user with the ability to supply an answer to each question allowed me to meet my requirements and deliver a functional password generator.
 
+Relying on the ```Math.random()``` function creates a bias in which values will be generated and consequently used to form the string that is given as the generated password. Because of this we can expect to see that certain values will be favoured over others. As such there is a chance that, should all criteria be selected for a shorter password length, not all criteria may be present in the generated password. I have tried to reduce this possibility as much as possible by the use of an additional function ```getRandomInt``` specifically targetting the choice of characters used within the final generated string. 
+
 **Thank you for visiting.**
 
 ### Deployed Application Link:
 
 * https://blmccavanagh.github.io/Password-Generator/
 
-### Password Generator Screen Capture
+### Password Generator Screen Capture:
 
 ![password generator demo](./assets/images/password-generator-demo.png)
 
-### Password Length Prompt
+### Password Length Prompt:
 
 ![password generator length prompt](./assets/images/select-password-length.png)
 
-### Password Lowercase Prompt
+### Password Lowercase Prompt:
 
 ![password generator lowercase prompt](./assets/images/include-uppercase.png)
 
-### Password Uppercase Prompt
+### Password Uppercase Prompt:
 
 ![password generator uppercase prompt](./assets/images/include-lowercase.png)
 
-### Password Numbers Prompt
+### Password Numbers Prompt:
 
 ![password generator numbers prompt](./assets/images/include-numbers.png)
 
-### Password Symbols Prompt
+### Password Symbols Prompt:
 
 ![password generator symbols prompt](./assets/images/include-symbols.png)
 
-### Example of Generated Password
+### Example of Generated Password:
 
 ![gererated password example](./assets/images/generated-password.png)
