@@ -1,92 +1,47 @@
-# 03 JavaScript: Password Generator
+# 03 Password Generator 
 
-## Your Task
+## This Github repository contains a secure password generator application written in HTML, CSS and JavaScript. 
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+It consists of a simple website which generates a complex password based on criteria supplied by the user when they click the generate password button.  
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+The user is prompted for the number of characters they wish their password to be, followed by a number of prompts as to whether their password should consist of Uppercase, Lowercase, Symbols and Numbers with OK and Cancel acting as a Yes or No prompt for each of these options. Once all questions have been asked of the user, the password is generated and supplied to the user in the website user interface, ready for use.
 
-## User Story
+I was motivated to develop this website to begin to familiarise myself with Javascript as a programming language, and to combine it with my existing HTML and CSS skills.  The website UI was forked from an existing GitHub project but the JavaScript code and its use within the HTML and CSS is my own work. A password generator is a useful utility with real world application.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+I aim to continue to iterate on the code in the future, potentially looking to better style the dialog boxes that are presented to the user, to move away from OK and Cancel to a Yes or No Prompt, and to simplify the multiple prompts provided to a single screen that allows the user to choose the various options they wish to supply as to the complexity of the password they wish to generate. Utilising JS code to automatically copy the generated password to the users clipboard could be another opportunity to improve the functionality of the project.
 
-## Acceptance Criteria
+As this was my first real use of JavaScript within a web application I found the project challenging, but utilised a number of tutorials on the use of ASCII code pages to supply the usable characters I could utilise to generate  a compliant password. I also utilised my developer peers to sanity check and discuss my approach, utilising their knowledge and support to produce an acceptable end result. Finally, the use of dialog box prompting to provide the user with the ability to supply an answer to each question allowed me to meet my requirements and deliver a functional password generator.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+**Thank you for visiting.**
 
-## Mock-Up
+### Deployed Application Link:
 
-The following image shows the web application's appearance and functionality:
+* https://blmccavanagh.github.io/Password-Generator/
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+### Password Generator Screen Capture
 
-## Grading Requirements
+![password generator demo](./assets/images/password-generator-demo.png)
 
-This homework is graded based on the following criteria: 
+### Password Length Prompt
 
-### Technical Acceptance Criteria: 40%
+![password generator length prompt](./assets/images/select-password-length.png)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+### Password Lowercase Prompt
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+![password generator lowercase prompt](./assets/images/include-uppercase.png)
 
-### Deployment: 32%
+### Password Uppercase Prompt
 
-* Application deployed at live URL.
+![password generator uppercase prompt](./assets/images/include-lowercase.png)
 
-* Application loads with no errors.
+### Password Numbers Prompt
 
-* Application GitHub URL submitted.
+![password generator numbers prompt](./assets/images/include-numbers.png)
 
-* GitHub repository that contains application code.
+### Password Symbols Prompt
 
-### Application Quality: 15%
+![password generator symbols prompt](./assets/images/include-symbols.png)
 
-* Application user experience is intuitive and easy to navigate.
+### Example of Generated Password
 
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![gererated password example](./assets/images/generated-password.png)
