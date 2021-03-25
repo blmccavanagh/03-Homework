@@ -20,6 +20,11 @@ var SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(arrayFromLowToHigh(58,
 
 var charCodes = [];
 
+function getRandomInt(length) {
+  var i = Math.floor(Math.random() * length);
+  return i;
+}
+
 // Create the generate password function.
 // Create a funtion that allows the user to choose specific criteria to be used in the generated password.
 function generatePassword() {
@@ -34,40 +39,57 @@ function generatePassword() {
     // Prompt the user to input the length of password they are trying to generate, if they provide a value outside the given parameters they will be redirected to begin again and enter a valid value.
     function getPasswordLength() {
       var passwordLength = prompt('How many characters would you like your password to contain? min: 8 max: 128');
-      while (passwordLength < 8 || passwordLength > 128 || isFinite(passwordLength) !== true) {
-        window.alert("You must enter a number between 8 and 128. Please try again!");
-        passwordLength = askForPasswordLength();
+      // loop if less 8 or more 128 then alert
+      while (passwordLength <  8 || passwordLength > 128) {
+        window.alert('Password must be between 8 and 128 characters! Please try again.');
+        passwordLength = getPasswordLength();
       }
       return passwordLength;
     }
 
+    var defaultChar = []
+
     // Concatenate the arrays from which password will be generated.
     if (useLowercase) {
+      var lowercase = getRandomInt(passwordLength);
+      defaultChar.push(LOWERCASE_CHAR_CODES[lowercase])
       charCodes = charCodes.concat(LOWERCASE_CHAR_CODES);  
     }
 
     if (useUppercase) {
+      var uppercase = getRandomInt(passwordLength);
+      defaultChar.push(UPPERCASE_CHAR_CODES[uppercase])
       charCodes = charCodes.concat(UPPERCASE_CHAR_CODES);  
     }
 
     if (useNumbers){
+      var number = getRandomInt(passwordLength);
+      defaultChar.push(NUMBER_CHAR_CODES[number])
       charCodes = charCodes.concat(NUMBER_CHAR_CODES);  
     }
 
     if (useSymbols) {
-        charCodes = charCodes.concat(SYMBOL_CHAR_CODES);  
+      var symbol = getRandomInt(passwordLength);
+      defaultChar.push(SYMBOL_CHAR_CODES[symbol]);
+      charCodes = charCodes.concat(SYMBOL_CHAR_CODES);  
     }
 
     // If the user selects none of the selection criteria they will receive an alert message to tell them that at least one of the options given must be chosen.
     if (!useLowercase, !useUppercase, !useNumbers, !useSymbols) {
-      window.alert('At least one character type must be selected!');
-      return passwordCharacters = '';
+      window.alert('At least one character type must be selected! Please try again.');
+      return generatePassword();
     }
 
     var passwordCharacters = []
     for (let i=0; i < passwordLength; i++) {
         var character = charCodes[Math.floor(Math.random() * charCodes.length)];
         passwordCharacters.push(String.fromCharCode(character));
+    }
+
+    for (let i=0; i < defaultChar.length; i++) {
+      var randomNumber = getRandomInt(passwordCharacters.length);
+      defaultChar[i] = String.fromCharCode(defaultChar[i]);
+      passwordCharacters[randomNumber] = defaultChar[i];
     }
 
     return passwordCharacters.join('')
