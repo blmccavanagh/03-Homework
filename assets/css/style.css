@@ -20,7 +20,8 @@ body,
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9fbfd;
+  /* background-color: #f9fbfd; */
+  background-image: url("../images/background-image-1.jpg");
 }
 
 .wrapper {
@@ -33,7 +34,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #fff;
 }
 
 .card {
@@ -81,7 +82,7 @@ header {
 .btn {
   font-family: inherit;
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #000000;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -99,6 +100,22 @@ button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
+
+button:hover {
+  color: #fff;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  font-size: xx-large;
+}
+
+@keyframes blink {
+	0% {opacity: 0.2}
+	49%{opacity: 1}
+	50% {opacity: 0.6}
+}
+
+blink{animation: blink 1s infinite;}
 
 .float-right {
   float: right;
@@ -133,6 +150,7 @@ footer {
   text-align: center;
   background-color: #000000;
   color: white;
+  border: 1px dotted #fff;
   border-radius: 6rem 2rem;
 }
 
