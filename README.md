@@ -14,36 +14,110 @@ As this was my first real use of JavaScript within a web application I found the
 
 Relying on the ```Math.random()``` function creates a bias in which values will be generated and subsequently used to form the string that is given as the generated password. Because of this we can expect to see that certain values will be favoured over others. As such there is a chance that, should all criteria be selected for a shorter password length, not all criteria may be present in the generated password. I have tried to reduce this possibility as much as possible by trying to insert a character from each of the selected criteria into the generated password.
 
+<div align="center">
+
 **Thank you for visiting.**
+
+</div>
+
+### Repository Link:
+
+* https://github.com/blmccavanagh/Password-Generator/
 
 ### Deployed Application Link:
 
 * https://blmccavanagh.github.io/Password-Generator/
 
-### Password Generator Screen Capture:
+### Application Screenshots:
 
-![password generator demo](./assets/images/password-generator-demo.png)
+---
 
-### Password Length Prompt:
+<div align="center">
+
+*Desktop Browser View* 
+
+</div>
+
+![Password Generator Desktop Screen Capture](./assets/images/password-generator-desktop-screen-capture.jpg)
+
+---
+
+<div align="center">
+
+*Mobile Browser View*
+
+</div>
+
+![Password Generator Desktop Screen Capture](./assets/images/password-generator-mobile-screen-capture.png)
+
+---
+
+<div align="center">
+
+*Generator Button Demo*
+
+</div>
+
+![Password Generator Button Demo](./assets/images/password-generator-button-gif.gif)
+
+---
+
+<div align="center">
+
+*Password Length Prompt*
+
+</div>
 
 ![password generator length prompt](./assets/images/select-password-length.png)
 
-### Password Lowercase Prompt:
+---
+
+<div align="center">
+
+*Password Lowercase Prompt*
+
+</div>
 
 ![password generator lowercase prompt](./assets/images/include-uppercase.png)
 
-### Password Uppercase Prompt:
+---
+
+<div align="center">
+
+*Password Uppercase Prompt*
+
+</div>
 
 ![password generator uppercase prompt](./assets/images/include-lowercase.png)
 
-### Password Numbers Prompt:
+---
+
+<div align="center">
+
+*Password Numbers Prompt*
+
+</div>
 
 ![password generator numbers prompt](./assets/images/include-numbers.png)
 
-### Password Symbols Prompt:
+---
+
+<div align="center">
+
+*Password Symbols Prompt*
+
+</div>
 
 ![password generator symbols prompt](./assets/images/include-symbols.png)
 
-### Example of Generated Password:
+---
+
+<div align="center">
+
+*Example of Generated Password*
+
+</div>
 
 ![gererated password example](./assets/images/generated-password.png)
+
+---

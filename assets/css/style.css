@@ -149,7 +149,7 @@ blink{animation: blink 1s infinite;}
 footer {
   font-family: 'Homemade Apple', cursive;
   font-size: 1.5rem;
-  margin: 25px auto;
+  margin: 25px auto 50px auto;
   width: 75%;
   text-align: center;
   background-color: #000000;
