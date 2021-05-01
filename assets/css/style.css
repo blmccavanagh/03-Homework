@@ -149,8 +149,8 @@ blink{animation: blink 1s infinite;}
 footer {
   font-family: 'Homemade Apple', cursive;
   font-size: 1.5rem;
-  margin-top: 25px;
-  width: 100%;
+  margin: 25px auto;
+  width: 75%;
   text-align: center;
   background-color: #000000;
   color: white;
@@ -264,8 +264,12 @@ img:hover {
     font-size: 3rem;
   }
 
+.flex-container {
+  flex-wrap: wrap;
+}
+
   .icon {
-    width: 8%;
+    width: 15%;
     margin: 3px;
   }
 }
