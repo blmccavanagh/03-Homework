@@ -75,7 +75,7 @@ function generatePassword() {
     }
 
     // If the user selects none of the selection criteria they will receive an alert message to tell them that at least one of the options given must be chosen.
-    if (!useLowercase, !useUppercase, !useNumbers, !useSymbols) {
+    if (!useLowercase && !useUppercase && !useNumbers && !useSymbols) {
       window.alert('At least one character type must be selected! Please try again.');
       return generatePassword();
     }
